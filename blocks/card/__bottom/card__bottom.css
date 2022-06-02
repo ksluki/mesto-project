@@ -1,0 +1,14 @@
+.card__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  align-items: center;
+  height: 75px;
+  padding-left: 21px;
+  padding-right: 20px;
+  padding-bottom: 31px;
+  padding-top: 24px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,13 @@
+.profile__description {
+  display: grid;
+  gap: 16px 18px;
+}
+
+@media screen and (max-width: 720px) {
+  .profile__description {
+    gap: 14px 10px;
+    justify-content: center;
+    margin-bottom: 36px;
+    align-self: center;
+  }
+}

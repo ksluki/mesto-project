@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Страница про исследования" />
+    <meta name="keywords" content="HTML5, CSS, research" />
+    <meta name="author" content="Ксения Лукина" />
+
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <title>MESTO</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./images/Vector.svg" alt="Место" />
+    </header>
+    <main class="main">
+      <section class="profile">
+        <div class="profile__info">
+          <img
+            class="profile__image"
+            src="./images/kusto.jpg"
+            alt="Исследователь"
+          />
+          <div class="profile__description">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button class="profile__edit"></button>
+            <p class="profile__subtitle">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__button"></button>
+      </section>
+      <div class="popup popup_opened">
+        <div class="popup__container">
+          <button type="button" class="popup__close">
+            <img
+              class="popup__img"
+              src="./images/CloseIcon.svg"
+              alt="Закрыть"
+            />
+          </button>
+          <form>
+            <fieldset class="popup__work">
+              <h3 class="popup__title">Редактировать профиль</h3>
+              <input
+                id="name"
+                placeholder="Имя"
+                name="name"
+                class="popup__text"
+              />
+              <input
+                id="job"
+                placeholder="Работа"
+                name="job"
+                class="popup__job"
+              />
+              <button type="submit" class="popup__submit">Сохранить</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <section class="cards">
+        <div class="card">
+          <img
+            src="./images/krasnodar.jpeg"
+            class="card__image"
+            alt="Краснодар"
+          />
+          <div class="card__bottom">
+            <h3 class="card__title">Краснодар</h3>
+            <img src="/images/like.svg" alt="лайк" />
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/sochi.jpg.webp" class="card__image" alt="Сочи" />
+          <div class="card__bottom">
+            <h3 class="card__title">Cочи</h3>
+            <img src="/images/like.svg" alt="лайк" />
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="./images/piter.jpg"
+            class="card__image"
+            alt="Санкт-Петербург"
+          />
+          <div class="card__bottom">
+            <h3 class="card__title">Санкт-Петербург</h3>
+            <img src="/images/like.svg" alt="лайк" />
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/moscow.jpg" class="card__image" alt="Москва" />
+          <div class="card__bottom">
+            <h3 class="card__title">Москва</h3>
+            <img src="/images/like.svg" alt="лайк" />
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/yosh.jpg" class="card__image" alt="Йошкар-Ола" />
+          <div class="card__bottom">
+            <h3 class="card__title">Йошкар-Ола</h3>
+            <img src="/images/like.svg" alt="лайк" />
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/kazan.webp" class="card__image" alt="Казань" />
+          <div class="card__bottom">
+            <h3 class="card__title">Казань</h3>
+            <img src="/images/like.svg" alt="лайк" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2022 Ксения Лукина</p>
+    </footer>
+  </body>
+</html>

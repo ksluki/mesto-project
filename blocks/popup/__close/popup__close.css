@@ -1,0 +1,18 @@
+.popup__close {
+  border: none;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  height: 32px;
+  width: 32px;
+  right: -40px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+@media screen and (max-width: 720px) {
+  .popup__close {
+    height: 20px;
+    right: 0;
+    width: 20px;
+  }
+}

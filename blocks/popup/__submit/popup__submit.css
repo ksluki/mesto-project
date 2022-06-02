@@ -1,0 +1,28 @@
+.popup__submit {
+  background-color: #000;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: 50px;
+  line-height: 22px;
+  margin: 0 36px 36px;
+  outline: none;
+  text-align: center;
+  width: 358px;
+}
+
+@media screen and (max-width: 720px) {
+  .popup__submit {
+    font-size: 14px;
+    height: 46px;
+    line-height: 16.94px;
+    margin-left: 22px;
+    margin-right: auto;
+    padding: 0;
+    width: 238px;
+  }
+}
