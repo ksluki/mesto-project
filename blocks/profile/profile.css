@@ -7,6 +7,9 @@
   padding-top: 40px;
   align-items: center;
   margin-bottom: 51px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 720px) {

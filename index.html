@@ -25,41 +25,13 @@
           />
           <div class="profile__description">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit"></button>
+            <button type="button" class="profile__edit"></button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__button"></button>
+        <button type="button" class="profile__button"></button>
       </section>
-      <div class="popup popup_opened">
-        <div class="popup__container">
-          <button type="button" class="popup__close">
-            <img
-              class="popup__img"
-              src="./images/CloseIcon.svg"
-              alt="Закрыть"
-            />
-          </button>
-          <form>
-            <fieldset class="popup__work">
-              <h3 class="popup__title">Редактировать профиль</h3>
-              <input
-                id="name"
-                placeholder="Имя"
-                name="name"
-                class="popup__text"
-              />
-              <input
-                id="job"
-                placeholder="Работа"
-                name="job"
-                class="popup__job"
-              />
-              <button type="submit" class="popup__submit">Сохранить</button>
-            </fieldset>
-          </form>
-        </div>
-      </div>
+
       <section class="cards">
         <div class="card">
           <img
@@ -69,7 +41,9 @@
           />
           <div class="card__bottom">
             <h3 class="card__title">Краснодар</h3>
-            <img src="/images/like.svg" alt="лайк" />
+            <button type="button" class="card__button">
+              <img class="card__like" src="/images/like.svg" alt="лайк" />
+            </button>
           </div>
         </div>
 
@@ -77,7 +51,9 @@
           <img src="./images/sochi.jpg.webp" class="card__image" alt="Сочи" />
           <div class="card__bottom">
             <h3 class="card__title">Cочи</h3>
-            <img src="/images/like.svg" alt="лайк" />
+            <button type="button" class="card__button">
+              <img class="card__like" src="/images/like.svg" alt="лайк" />
+            </button>
           </div>
         </div>
 
@@ -89,7 +65,9 @@
           />
           <div class="card__bottom">
             <h3 class="card__title">Санкт-Петербург</h3>
-            <img src="/images/like.svg" alt="лайк" />
+            <button type="button" class="card__button">
+              <img class="card__like" src="/images/like.svg" alt="лайк" />
+            </button>
           </div>
         </div>
 
@@ -97,7 +75,9 @@
           <img src="./images/moscow.jpg" class="card__image" alt="Москва" />
           <div class="card__bottom">
             <h3 class="card__title">Москва</h3>
-            <img src="/images/like.svg" alt="лайк" />
+            <button type="button" class="card__button">
+              <img class="card__like" src="/images/like.svg" alt="лайк" />
+            </button>
           </div>
         </div>
 
@@ -105,14 +85,18 @@
           <img src="./images/yosh.jpg" class="card__image" alt="Йошкар-Ола" />
           <div class="card__bottom">
             <h3 class="card__title">Йошкар-Ола</h3>
-            <img src="/images/like.svg" alt="лайк" />
+            <button type="button" class="card__button">
+              <img class="card__like" src="/images/like.svg" alt="лайк" />
+            </button>
           </div>
         </div>
         <div class="card">
           <img src="./images/kazan.webp" class="card__image" alt="Казань" />
           <div class="card__bottom">
             <h3 class="card__title">Казань</h3>
-            <img src="/images/like.svg" alt="лайк" />
+            <button type="button" class="card__button">
+              <img class="card__like" src="/images/like.svg" alt="лайк" />
+            </button>
           </div>
         </div>
       </section>
@@ -120,5 +104,32 @@
     <footer class="footer">
       <p class="footer__text">&copy; 2022 Ксения Лукина</p>
     </footer>
+    <div class="popup popup_opened">
+      <div class="popup__container">
+        <button type="button" class="popup__close">
+          <img class="popup__img" src="./images/CloseIcon.svg" alt="Закрыть" />
+        </button>
+        <form name="profile">
+          <fieldset class="popup__work">
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <input
+              id="name"
+              placeholder="Имя"
+              name="name"
+              class="popup__text"
+              value="Жак-Ив Кусто"
+            />
+            <input
+              id="job"
+              placeholder="Работа"
+              name="job"
+              class="popup__text popup__text_job"
+              value="Исследователь океана"
+            />
+            <button type="submit" class="popup__submit">Сохранить</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
