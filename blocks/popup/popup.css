@@ -1,6 +1,6 @@
 .popup {
   background: rgba(0, 0, 0, 0.7);
-  display: none;
+
   position: fixed;
   height: 100%;
   width: 100%;
@@ -8,4 +8,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  transition: visibility 0.8s, opacity 0.8s linear;
+  visibility: hidden;
+  opacity: 0;
 }

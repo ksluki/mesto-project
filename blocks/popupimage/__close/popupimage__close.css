@@ -1,0 +1,15 @@
+.popupimage__close {
+  border: none;
+  position: absolute;
+  top: -21px;
+  right: 0px;
+  height: 32px;
+  width: 32px;
+  right: -22px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.popupimage__close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

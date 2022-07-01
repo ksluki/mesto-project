@@ -1,0 +1,10 @@
+.popup__link {
+  margin-bottom: 48px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .popup__link {
+    margin-bottom: 45px;
+  }
+}
