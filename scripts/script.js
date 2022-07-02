@@ -62,7 +62,7 @@ function handleProfileFormSubmit(evt) {
   job.textContent = popupJob.value;
   infoName.textContent = popupName.value;
   evt.preventDefault();
-  closePopup();
+  closePopup(profilePopup);
 }
 
 formEdit.addEventListener("submit", handleProfileFormSubmit);
@@ -141,6 +141,6 @@ popupClosecard.addEventListener("click", function () {
 function handleCardSubmit(evt) {
   addCard(placeName.value, link.value);
   evt.preventDefault();
-  closePopup();
+  closePopup(popupAddcard);
 }
 formCard.addEventListener("submit", handleCardSubmit);
