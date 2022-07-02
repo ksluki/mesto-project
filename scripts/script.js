@@ -124,12 +124,11 @@ function createCard(name, link) {
     popupCaption.textContent = name;
   }
 
-  popupImageClose.addEventListener("click", function () {
-    closePopup(popupImage);
-  });
   return wholElement;
 }
-
+popupImageClose.addEventListener("click", function () {
+  closePopup(popupImage);
+});
 //добавление карточки
 
 addButton.addEventListener("click", function () {
